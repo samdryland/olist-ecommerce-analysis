@@ -232,3 +232,8 @@ A category can have a high rate but few returning customers, or a lower rate but
 
 ## Project Files
 
+## SQL Analysis
+
+The SQL queries used in this project are available in the [`sql` folder](sql/).
+
+
