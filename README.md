@@ -218,6 +218,9 @@ A category can have a high rate but few returning customers, or a lower rate but
 
 ## Tableau Dashboards
 
+[**Explore the interactive dashboards on Tableau Public**](https://public.tableau.com/views/OlistE-commerceAnalysis_17927735551680/GeneralSalesactivity?:language=en-GB&:display_count=n&:origin=viz_share_link)
+
+
 <img src="images/dashboard1.png" alt="Tableau Dashboard 1" width="700">
 
 
