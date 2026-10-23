@@ -59,7 +59,9 @@ The dataset contained 71 product categories, with demand concentrated around a g
 ### Seller Performance and Revenue Distribution
 
 <img src="images/Sales-Volume-Vs.-Revenue.png" alt="Sales Volume vs. Revenue" width="500">
-note: Only the top 25 sellers by revenue are displayed.
+Note: Only the top 25 sellers by revenue are displayed.
+
+
 
 
 Of 112,650 order-item records in total, the top 10 sellers accounted for 14.15%, so sales were not dominated by a few sellers. Seller rankings changed depending on whether they were measured by items sold, product revenue, freight revenue or total revenue, so volume alone is a poor measure of performance.
@@ -119,6 +121,8 @@ Console Games contained 317 distinct products, but the top two accounted for rou
 
 <img src="images/Review-Vs.-Revenue-Product-Categories.png" alt="Review vs. Revenue by Product Category" width="500">
 Note: The x-axis uses a logarithmic scale for readability.
+
+
 
 
 Office Furniture was the 15th-highest revenue category but had the third-lowest average review score (3.49/5), making it a priority for investigation. Bed, Bath & Table ranked third for revenue but 13th-lowest for reviews at 3.9/5, close to the overall average of 4.09/5, so this is not necessarily a serious problem. Furniture & Decor and Computer Accessories also combined substantial revenue with somewhat lower scores, while most other categories were reviewed well.
