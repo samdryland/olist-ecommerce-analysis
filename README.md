@@ -41,7 +41,7 @@ I used SQL (SQLite) to join the nine tables on identifiers such as `order_id`, `
 
 ### Geographic Sales Performance
 
-![Sales Volume by State](images/sales-volume-by-state.png)
+<img src="images/sales-by-state.png" alt="Sales by State" width="500">
 
 Sales were heavily concentrated in Brazil's Southeast, which accounted for roughly 60% of orders. São Paulo recorded 47,449 order-item records, and it, Rio de Janeiro and Minas Gerais were the only states with more than 10,000.
 
@@ -49,7 +49,7 @@ Sales were heavily concentrated in Brazil's Southeast, which accounted for rough
 
 ### Product Category Performance
 
-![Best-Selling Product Categories](images/best-selling-product-categories.png)
+<img src="images/best-selling-product-categories.png" alt="Best-Selling Product Categories" width="500">
 
 The dataset contained 71 product categories, with demand concentrated around a group of popular ones. Bed, Bath & Table led with more than 11,100 order-item records, followed by Health & Beauty and Sports & Leisure. Health & Beauty and Bed, Bath & Table featured among the top categories in many states, Furniture & Decor performed strongly in several (including Rio de Janeiro), and Bahia showed notable Sports & Leisure sales. No state had a category that stood out against the national pattern, suggesting widespread rather than region-specific demand.
 
@@ -57,7 +57,7 @@ The dataset contained 71 product categories, with demand concentrated around a g
 
 ### Seller Performance and Revenue Distribution
 
-![Seller Revenue vs Sales Volume](images/seller-revenue-vs-sales.png)
+<img src="images/Sales-Volume-Vs.-Revenue.png" alt="Sales Volume vs. Revenue" width="500">
 
 Of 112,650 order-item records in total, the top 10 sellers accounted for 14.15%, so sales were not dominated by a few sellers. Seller rankings changed depending on whether they were measured by items sold, product revenue, freight revenue or total revenue, so volume alone is a poor measure of performance.
 
@@ -79,13 +79,13 @@ This section uses 2017 to examine whether individual categories followed the sam
 
 ### Quarterly Sales Distribution
 
-![Quarterly Sales Distribution](images/quarterly-sales-distribution.png)
+<img src="images/Quarterly-Sales.png" alt="Quarterly Sales" width="500">
 
 Sales built throughout the year, with Q4 accounting for 39.9% of annual order-item records, compared with 28.0% in Q3, 20.5% in Q2 and 11.6% in Q1. Q4 was therefore more than three times the Q1 share, though this marketplace-wide pattern does not apply equally to every category.
 
 ### Product Category Seasonality
 
-![Quarterly Category Seasonality Heat Map](images/category-quarterly-seasonality.png)
+<img src="images/Quarterly-Sales-Product-Categories.png" alt="Quarterly Sales by Product Category" width="500">
 
 Comparing each category's quarterly distribution with the marketplace pattern highlighted several differences:
 
@@ -96,15 +96,13 @@ Q4 dominated overall, but some categories had stronger demand earlier in the yea
 
 ### Monthly Patterns
 
-![Monthly Sales Patterns by Category](images/monthly-seasonality-trends.png)
+<img src="images/Monthly-Sales-Scatter-Plot.png" alt="Monthly Sales Scatter Plot" width="500">
 
 Monthly analysis checked whether the quarterly differences reflected sustained demand or individual strong months. It supported the year-end concentration for Stationery and Console Games and the stronger Q2 for Housewares. Office Furniture showed a notable July increase, with unique customers rising from 45 in June to 96 in July before falling to 46 in August. The increase was spread across a broad range of products, suggesting wider category demand rather than one product or a few unusually large orders.
 
 ### Console Games: Product-Level Drivers
 
-![Console Games Annual Sales Contribution](images/console-games-annual-contribution.png)
-
-![Monthly Console Games Sales Breakdown](images/console-games-monthly-breakdown.png)
+<img src="images/Console-Games-Sales.png" alt="Console Games Sales Analysis — Two Graphs" width="500">
 
 Console Games contained 317 distinct products, but the top two accounted for roughly 27% of annual category sales. Splitting monthly sales into these two titles and the rest of the category showed that they contributed heavily in October, November and December, so the category's Q4 peak was partly driven by a small number of products. Possible explanations include game popularity, product launches, promotions or events such as Black Friday, but the sales data alone cannot establish which.
 
@@ -116,13 +114,13 @@ Console Games contained 317 distinct products, but the top two accounted for rou
 
 ### Category Revenue and Review Scores
 
-![Product Category Revenue vs Average Review Score](images/category-revenue-vs-review-score.png)
+<img src="images/Review-Vs.-Revenue-Product-Categories.png" alt="Review vs. Revenue by Product Category" width="500">
 
 Office Furniture was the 15th-highest revenue category but had the third-lowest average review score (3.49/5), making it a priority for investigation. Bed, Bath & Table ranked third for revenue but 13th-lowest for reviews at 3.9/5, close to the overall average of 4.09/5, so this is not necessarily a serious problem. Furniture & Decor and Computer Accessories also combined substantial revenue with somewhat lower scores, while most other categories were reviewed well.
 
 ### Delivery Time and Review Scores
 
-![Delivery Time vs Average Review Score](images/delivery-time-vs-review-score.png)
+<img src="images/Delivery-Time-Vs.-Review-Bar-Chart.png" alt="Delivery Time vs. Review Bar Chart" width="500">
 
 Average delivery time was 12.56 days, ranging from 0.5 to 209 days. Review scores fell steadily as delivery times lengthened:
 
@@ -138,17 +136,17 @@ Deliveries taking 27 days or more (6,158 reviews) scored 1.88 points below those
 
 ### Regional Differences in Long Deliveries
 
-![Percentage of Deliveries Taking 27+ Days by State](images/long-deliveries-by-state.png)
+<img src="images/Delivery-Times-by-State.png" alt="Delivery Times by State" width="500">
 
 Long deliveries varied sharply by state. Amazonas had the highest rate, with 44.14% of deliveries taking 27 days or longer, compared with 1.82% in São Paulo. Results for low-volume states such as Amazonas, Amapá and Roraima should be treated cautiously because small samples give less stable percentages. Alagoas, Pará, Bahia, Ceará and Maranhão are stronger candidates for investigation because they combine high rates with larger delivery volumes. Together, the number of long deliveries shows the scale of the issue and the percentage shows how widespread it is.
 
 ### Seller-Level Delivery Performance
 
-![Seller Delivery Volume vs Long-Delivery Rate](images/seller-delivery-performance.png)
+<img src="images/Total-Deliveries-Vs.-Delay-Delivery-Rate-Seller-ID.png" alt="Total Deliveries vs. Delayed Delivery Rate by Seller ID" width="500">
 
 Long deliveries were not evenly spread across sellers. Seller `7c67e1448b00f6e969d365cea6b010ab` stood out, with 225 of 970 deliveries (23.2%) taking 27 days or longer and an average review score of 3.49/5. Considering both volume and rate matters, because a high percentage based on very few deliveries is less significant than a similar rate affecting many customers.
 
-![Long Deliveries by Product Category for Seller 7c67](images/seller-7c67-long-deliveries-by-category.png)
+<img src="images/Seller-Specific-Product-Category-Long-Delivery.png" alt="Seller-Specific Product Category Long Delivery" width="500">
 
 Office Furniture accounted for 210 of this seller's 225 long deliveries (93.3%), spread across many individual products rather than one or two (the highest-volume product accounted for 20 long deliveries and the next for 13). The seller was responsible for 70.35% of Olist's Office Furniture sales but 80.77% of its long deliveries. This points to a broader seller-category delivery issue rather than a problem with individual products, although the underlying cause has not been established.
 
@@ -160,7 +158,7 @@ Office Furniture accounted for 210 of this seller's 225 long deliveries (93.3%),
 
 ### Repeat Purchase Behaviour
 
-![Customer Count by Number of Orders](images/customer-orders-frequency.png)
+<img src="images/Repeat-Customer-Count.png" alt="Repeat Customer Count" width="500">
 
 Of 96,096 customers, only 2,997 placed more than one order, a repeat rate of 3.12%. Most returning customers placed exactly two orders (2,745, or 91.6%), 203 (6.77%) placed three, and only 49 placed four or more. The main retention opportunity is therefore encouraging a second purchase. These figures should be read in the context of the observation period, as customers whose first order came near the end of the data had less time to return.
 
