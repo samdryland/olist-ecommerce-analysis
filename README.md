@@ -102,7 +102,7 @@ Monthly analysis checked whether the quarterly differences reflected sustained d
 
 ### Console Games: Product-Level Drivers
 
-<img src="images/Console-Games-Sales.png" alt="Console Games Sales Analysis — Two Graphs" width="500">
+<img src="images/Console-Games-Sales.png" alt="Console Games Sales Analysis — Two Graphs" width="700">
 
 Console Games contained 317 distinct products, but the top two accounted for roughly 27% of annual category sales. Splitting monthly sales into these two titles and the rest of the category showed that they contributed heavily in October, November and December, so the category's Q4 peak was partly driven by a small number of products. Possible explanations include game popularity, product launches, promotions or events such as Black Friday, but the sales data alone cannot establish which.
 
@@ -164,9 +164,17 @@ Of 96,096 customers, only 2,997 placed more than one order, a repeat rate of 3.1
 
 ### Repeat Purchasing by Product Category
 
-![Repeat Customer Volume by Product Category](images/repeat-customer-volume-by-category.png)
-
-![Repeat-Purchase Rate by Product Category](images/repeat-purchase-rate-by-category.png)
+<table>
+  <tr>
+    <td align="center">
+      <img src="images/Repeat-Customer-Volume-Product-Category.png" alt="Repeat Customer Volume by Product Category" width="500">
+    </td>
+    <td width="30"></td>
+    <td align="center">
+      <img src="images/Repeat-Purchase-Rate-Product-Category.png" alt="Repeat Purchase Rate by Product Category" width="500">
+    </td>
+  </tr>
+</table>
 
 Repeat-customer volume and repeat-purchase rate told different stories:
 
