@@ -205,6 +205,24 @@ A category can have a high rate but few returning customers, or a lower rate but
 - **Limited operational detail:** The dataset does not show the precise causes of delays or which party was responsible. As Olist uses independent sellers and delivery companies, the recommendations focus on investigating issues, tracking performance and working with sellers to make improvements.
 - **Retention measurement:** Customers who ordered near the end of the dataset had less time to return. Category-level repeat purchasing also misses customers who returned to buy from a different category, so it should not be read as overall retention.
 
+## Tableau Dashboards
+
+<img src="images/dashboard1.png" alt="Tableau Dashboard 1" width="700">
+
+
+<img src="images/Dashboard2.png" alt="Tableau Dashboard 2" width="700">
+
+
+<img src="images/Dashboard3.png" alt="Tableau Dashboard 3" width="700">
+
+
+<img src="images/Dashboard4.png" alt="Tableau Dashboard 4" width="700">
+
+
+<img src="images/Dashboard5.png" alt="Tableau Dashboard 5" width="700">
+
+
+<img src="images/Dashboard6.png" alt="Tableau Dashboard 6" width="700">
 
 ## Tools & Project Files
 
