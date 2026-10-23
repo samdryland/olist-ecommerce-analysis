@@ -224,9 +224,11 @@ A category can have a high rate but few returning customers, or a lower rate but
 
 <img src="images/Dashboard6.png" alt="Tableau Dashboard 6" width="700">
 
-## Tools & Project Files
+## Tools
 
 - **SQL (SQLite):** Data cleaning, joining tables, aggregation and analysis
 - **Tableau:** Interactive dashboards and data visualisation
 - **GitHub:** Project documentation, SQL files and portfolio presentation
+
+## Project Files
 
