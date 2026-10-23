@@ -31,8 +31,8 @@ I used SQL (SQLite) to join the nine tables on identifiers such as `order_id`, `
 
 - **Sales and revenue:** Sales volume was measured by counting order-item records, and seller revenue by summing product prices. Profit could not be calculated because the dataset contains no cost information.
 - **Customer experience:** Average review scores were calculated overall and by category and seller. Delivery duration was calculated from purchase and customer-delivery timestamps, then grouped into time bands.
-- **Retention:** I identified repeat customers, calculated the repeat-purchase rate and examined customers who bought from the same category more than once.
-- **Seasonality:** I used 2017, the only complete calendar year, to compare monthly and quarterly patterns, and compared each category's quarterly sales share with the marketplace-wide distribution.
+- **Retention:** I identified repeat customers, calculated the repeat-purchase rate and examined customers who bought from the same category more than once. Only Categories with more than 50 repeat customers were included.
+- **Seasonality:** I used 2017, the only complete calendar year, to compare monthly and quarterly patterns, and compared each category's quarterly sales share with the marketplace-wide distribution. Only the top 20 Product Categories were used for analysis of seasonality.
 - **Visualisation:** Tableau dashboards containing charts, maps and heat maps present the results.
 
 ---
@@ -50,6 +50,7 @@ Sales were heavily concentrated in Brazil's Southeast, which accounted for rough
 ### Product Category Performance
 
 <img src="images/best-selling-product-categories.png" alt="Best-Selling Product Categories" width="500">
+note: Only the top 25 sellers by revenue are displayed.
 
 The dataset contained 71 product categories, with demand concentrated around a group of popular ones. Bed, Bath & Table led with more than 11,100 order-item records, followed by Health & Beauty and Sports & Leisure. Health & Beauty and Bed, Bath & Table featured among the top categories in many states, Furniture & Decor performed strongly in several (including Rio de Janeiro), and Bahia showed notable Sports & Leisure sales. No state had a category that stood out against the national pattern, suggesting widespread rather than region-specific demand.
 
@@ -115,6 +116,7 @@ Console Games contained 317 distinct products, but the top two accounted for rou
 ### Category Revenue and Review Scores
 
 <img src="images/Review-Vs.-Revenue-Product-Categories.png" alt="Review vs. Revenue by Product Category" width="500">
+Note: The x-axis uses a logarithmic scale for readability.
 
 Office Furniture was the 15th-highest revenue category but had the third-lowest average review score (3.49/5), making it a priority for investigation. Bed, Bath & Table ranked third for revenue but 13th-lowest for reviews at 3.9/5, close to the overall average of 4.09/5, so this is not necessarily a serious problem. Furniture & Decor and Computer Accessories also combined substantial revenue with somewhat lower scores, while most other categories were reviewed well.
 
@@ -143,6 +145,7 @@ Long deliveries varied sharply by state. Amazonas had the highest rate, with 44.
 ### Seller-Level Delivery Performance
 
 <img src="images/Total-Deliveries-Vs.-Delay-Delivery-Rate-Seller-ID.png" alt="Total Deliveries vs. Delayed Delivery Rate by Seller ID" width="500">
+Note: For readability and to focus on sellers with sufficient delivery volume, only sellers with more than 250 deliveries are included.
 
 Long deliveries were not evenly spread across sellers. Seller `7c67e1448b00f6e969d365cea6b010ab` stood out, with 225 of 970 deliveries (23.2%) taking 27 days or longer and an average review score of 3.49/5. Considering both volume and rate matters, because a high percentage based on very few deliveries is less significant than a similar rate affecting many customers.
 
